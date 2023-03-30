@@ -1,0 +1,39 @@
+footer {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(10, 10, 10));
+    padding-top:80px;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+    padding: 50px;
+    font-size: .8rem;
+}
+
+.footer-container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container ul {
+    list-style: none;
+    font-size: 1.2rem;
+    width: 395px;
+    display: flex;
+    gap: 50px;
+}
+
+.redes {
+    padding: 0px;
+    width: 395px;
+    display: flex;
+    gap: 50px;
+
+}

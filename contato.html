@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="https://www.google.com"><img src="/fotos/logo.svg"></a>
+            </div>
+            <nav class="nav-header">
+                <ul class="lista-header">
+                    <li><a class='botao-header' href="#sobre">Sobre nós</a></li>
+                    <li><a class='botao-header' href="#planos">Nossos Planos</a></li>
+                    <li><a class='botao-header' href="/contato.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="home" class="home">
+            <img src="./fotos/r4foto__1_-removebg-preview.png" width="20%">
+        </section>
+    </header>
+    <main>
+        <h1 class="contato-titulo">Preencha o formulário e entraremos em contato com você!</h1>
+    
+        <form action="./">
+            
+                <div>
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+            <div class="grid-form">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="aaaa@aa.com">
+                    </div>
+                    <div class="fone">
+                        <div class="fone-form">
+                            <label for="telefone">Telefone*</label>
+                            <input type="tel" id="telefone" name="fone" placeholder="(99)99999-9999" required>
+                        </div>
+                        <spam>Prefira informar um telefone com acesso ao whatsapp para contato facilitado!</spam>
+                    </div>
+
+                <div class="whatsapp">
+                    <spam>é whatsapp?</spam>
+                    <label for="sim" class="radio">sim</label>
+                    <input type="radio" id="sim" name="whatsapp">
+                    <label for="nao" class="radio">não</label>
+                    <input type="radio" id="nao" name="whatsapp">
+                </div>
+            </div>
+        
+                <div>
+                    <label for="contato">Qual a melhor forma de contato?</label>
+                    <select name="contato" id="contato">
+                        <option value="whatsapp">Whatsapp</option>
+                        <option value="ligação">Ligação</option>
+                        <option value="Email">Email</option>
+                    </select>
+                </div>
+                <div class="horario-ligar">
+                    <label for="horario">Digite o melhor horário para ligarmos:</label>
+                    <textarea name="horario-ligar" id="horario" rows="5"
+                        placeholder="'Entre 8 da manhã e 1 da tarde'"></textarea>
+                </div>
+        
+                <button>Enviar Formulario</button>
+            
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li><a href="#sobre">Sobre nós</a></li>
+                <li><a href="#planos">Nossos Planos</a></li>
+                <li><a href="/contato.html">Fale Conosco</a></li>
+            </ul>
+            <img src="./fotos/r4foto__1_-removebg-preview.png" width="5%">
+            <div class="redes">
+                <img src="./fotos/nest_heat_link_gen_3_FILL0_wght400_GRAD0_opsz48.svg">
+                <img src="./fotos/icons8-facebook.svg">
+                <img src="./fotos/whatsapp-logo_icon-icons.com_57054.svg">
+            </div>
+        </div>
+        <p>R4 ACADEMIA © TODOS OS DIREITOS RESEREVADOS</p>
+    </footer>
+    
+</body>
+</html>

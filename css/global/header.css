@@ -1,0 +1,47 @@
+.botao-header {
+    text-decoration: none;
+    color: inherit;
+}
+.header {
+    background: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    gap: 20%;
+}
+header{
+    width: 100%;
+}
+
+
+.lista-header{
+    list-style: none;
+    font-family: arial;
+    color: rgb(190, 190, 190);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    font-size: 1rem;
+}
+
+.lista-header li:hover {
+    cursor: pointer;
+    color: rgb(233, 71, 71);
+    transition: color 0.3s;
+}
+
+.home {
+    padding: 8em;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(/fotos/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    gap: 5em;
+}

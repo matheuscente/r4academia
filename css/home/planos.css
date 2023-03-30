@@ -1,0 +1,89 @@
+.plano-header .preco {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background: black;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1;
+    font-size: 1.2rem;
+}
+
+.plano-header {
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 0;
+}
+.plano {
+    width: 300px;
+    background: #0e1013;
+    color: rgb(190, 190, 190);
+    padding: 20px 20px 20px 10px;
+    border-radius: 5px;;
+
+}
+
+.plano ul {
+    list-style: none;
+}
+
+.plano ul li {
+
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.plano ul li::before {
+    content:">>";
+    padding-right: 5px;
+    color: red;
+}
+
+.plano li:nth-child(odd) {
+    background: black;
+}
+
+.plano-body {
+    display:flex;
+    flex-direction: column;
+}
+
+.btn-plano {
+    margin-top: 20px;
+    padding:10px 20px;
+    border-radius: 5px;
+    background: red;
+    align-self: center;
+    cursor: pointer;
+}
+
+.glider-contain {
+    position: relative;
+    margin-top: 50px;
+    max-width: 1000px;
+}
+.glider-contain {
+    padding-left: 30px;
+    position: relative;
+}
+.conteiner {
+    position: relative;
+    padding: 50px 20px 10px 20px;
+    margin-top: 50px;
+    border: 4px solid red;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    z-index: 3;
+    font-size: 2rem;
+    background: #282a2d;
+    padding: 10px 100px 0px 100px;
+    top: -30px;
+    left: 35%;
+    color: rgb(190, 190, 190);
+    position: absolute;
+    border: none;
+    cursor: pointer;
+}

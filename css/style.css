@@ -1,0 +1,28 @@
+       /*CSS GLOBAL*/
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+
+       /*CSS HOME*/
+@import "./home/profissionais.css";
+@import "./home/sobre.css";
+@import "./home/planos.css";
+
+
+    /*CSS GLIDER API*/
+@import "./glider/glider.min.css";
+
+    /*CSS AGENDAMENTO*/
+@import "./agendamento/agendamento.css";
+
+
+
+
+
+
+
+
+
+
+
+

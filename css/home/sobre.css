@@ -1,0 +1,78 @@
+.sobre {
+    padding-bottom: 100px;
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+}
+
+
+.titulo-sobre {
+    max-width: max-content;
+    font-family: 'segoe UI';
+    font-weight: 400;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 140px;
+    font-size: 3rem;
+    color: rgb(190, 190, 190);
+    position: relative;
+}
+
+.titulo-sobre::before {
+    content: '';
+    width: 60%;
+    height: 4px;
+    top: 200px;
+    background-image: linear-gradient(to right, rgb(245, 39, 39), rgb(83, 15, 15));
+    position: absolute;
+}
+
+.item {
+    width: 450px;
+    position: relative;
+}
+
+
+.item img {
+    border-radius: 5px;
+    height: 350px;
+    width: 450px;
+    object-fit: cover;
+}
+
+
+.item p {
+    padding-left: 0px;
+    padding-top: 30px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    max-width: 40ch;
+    z-index: 1;
+    text-align: start;
+    color: rgb(190, 190, 190);
+}
+
+
+.flex-sobre {
+    flex-wrap: wrap;
+    display:flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.sobre-flex2{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-flex2 h2{
+    padding-bottom: 80px;
+}
+
+.sobre-flex2 a{
+    color: white;
+    background: rgb(29, 28, 28);
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: 5px outset red;
+}
