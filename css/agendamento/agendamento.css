@@ -1,87 +1,143 @@
 main {
     width: 100%;
-    background: rgb(22, 22, 22);
 }
 
+
 form {
-    margin: 0 auto;
-    border-radius: 5px;
-    background: #282a2d;;
+    margin: 0 auto 6.25rem auto;
+    border-radius: 0.313rem;
+    background: var(--bg3);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    width: fit-content;
-    padding: 30px;
+    font-size: var(--font-size-p);
+    width: 50rem;
+    padding: 1.875rem;
 }
 
 label {
-    padding: 10px;
-    color: white;
+    text-transform: capitalize;
+    padding: 0.625rem 0.625rem 0.625rem 0px;
+    color: var(--color-subtitle);
     display: block;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
+.nome label {
+    width: fit-content;
+}
 input {
-    font-size: 1.2rem;
-    padding: 8px;
+    border-radius: 0.25rem;
+    font-size: var(--font-size-p);
+    padding: 0.5rem;
 }
 
-div spam {
+div span {
     display: block;
     color: white;
 }
 
-.contato-titulo {
-    text-align: center;
-    font-family: 'segoe UI';
-    text-transform: uppercase;
-    color: rgb(190, 190, 190);
-    font-weight: 400;
+.contato-title {
+    padding: 5rem;
 }
 
-.horario-ligar {
-    display: none;
+.contato-title::before {
+    top: 10rem;
 }
 
-.flex-form {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+
+#mensagem {
+    padding: 0.625rem;
+    font-size: var(--font-size-p);
+    width: 100%;
+    border-radius: 0.313rem;
 }
 
 .fone{
     display: flex;
-    gap: 15px;
+    gap: 0.938rem;
     align-items: center;
 }
 
-.fone > spam {
-    background-color: #3f4347;
-    width: 20ch;
-    padding: 10px;
-    border-radius: 5px;
-    position: absolute;
-    display: none;
+
+.fone-form {
+    width: 100%;
 }
 
 .whatsapp {
+    display: flex;
+    align-items: baseline;
+    gap: 1.875rem;
+    margin-top: 0.625rem;
     grid-column: 2;
+}
+.whatsapp > span {
+    margin-top: 0.313rem;
 }
 
 .radio {
-    display: inline-block;
-   
+    margin: 0px;
+    display: flex;
+    padding: 0px;
+    gap: 1.563rem;
+}
+
+.radio div {
+    gap: 0.313rem;
+    display: flex;
+    align-items: baseline;
+}
+
+div label {
+    width: 2.188rem;
 }
 
 .grid-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0px 50px;
+    gap: 0px 3.125rem;
+}
+
+.grid-form input {
+    width: 100%;
 }
 
 .email {
     grid-column: 1;
 }
 
-.fone-form {
-    display: relative;
+
+#nome {
+    width: 100%;
+}
+.forma-contato label {
+    margin: 0px;
+    padding: 0px 0px 1.25rem;
+    width: fit-content;
+}
+
+.forma-contato > #contato {
+    font-size: var(--font-size-p);
+    padding: 0.313rem 0.625rem;
+    border-radius: 0.313rem;
+    text-transform: capitalize;
+}
+
+ form button {
+    margin: 3.125rem auto 0 auto;
+    display: block;
+    color: rgb(202, 202, 202);
+    background: red;
+    text-transform: uppercase;
+    padding: 1.25rem 1.875rem;
+    border: none;
+    border-radius: 0.313rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.campo {
+    margin-bottom: 1.875rem;
 }

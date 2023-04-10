@@ -1,0 +1,56 @@
+#contato-home {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/fotos/pexels-anush-gorak-1229356.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3.125rem;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    gap: 20%;
+}
+
+.mapa {
+    width: 31.25rem;
+    height:31.25rem;
+    object-fit: cover;
+}
+
+.mapa iframe {
+    border-radius: 5px;
+    width:100%;
+    height: 100%;
+}
+
+.redes-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 3.125rem;
+}
+
+.redes-home img {
+    width: 7em;
+}
+
+.redes-home img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.redes-home img:last-child {
+    width: 6em;
+}
+
+.local h1,
+.redes-contato h2
+ {
+    padding-top: 3.75rem;
+    padding-bottom: 4.375rem;
+}
+
+.local h1::before,
+.redes-contato h2::before
+ {
+    top: 8.875rem;
+}

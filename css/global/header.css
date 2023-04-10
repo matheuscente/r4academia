@@ -3,10 +3,10 @@
     color: inherit;
 }
 .header {
-    background: rgb(10, 10, 10);
+    background-color: var(--bg1);
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 1.5rem;
     width: 100%;
     justify-content: center;
     gap: 20%;
@@ -18,12 +18,12 @@ header{
 
 .lista-header{
     list-style: none;
-    font-family: arial;
-    color: rgb(190, 190, 190);
+    font-family: var(--p-font);
+    color: var(--color-p);
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
-    font-size: 1rem;
+    gap: 5em;
+    font-size: var(--font-size-p);
 }
 
 .lista-header li:hover {

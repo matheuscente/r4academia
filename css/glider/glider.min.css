@@ -73,13 +73,13 @@
 
 .glider-next,
 .glider-prev {
-    background: #282a2d;
+    background: none;
     position: absolute;
     padding: 5px 0px 10px 0px;
     z-index: 2;
-    font-size: 60px;
+    font-size: 100px;
     text-decoration: none;
-    left: -40px;
+    left: 0px;
     top: 35%;
     cursor: pointer;
     color: #666;
@@ -98,7 +98,7 @@
 }
 
 .glider-next {
-    right: -40px;
+    right: -15px;
     left: auto
 }
 

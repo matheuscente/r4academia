@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,16 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="item-body">
         <div class="header">
             <div class="logo">
-                <a href="https://www.google.com"><img src="/fotos/logo.svg"></a>
+                <a href="index.html"><img src="/fotos/logo.svg"></a>
             </div>
             <nav class="nav-header">
                 <ul class="lista-header">
-                    <li><a class='botao-header' href="#sobre">Sobre nós</a></li>
-                    <li><a class='botao-header' href="#planos">Nossos Planos</a></li>
-                    <li><a class='botao-header' href="/contato.html">Fale Conosco</a></li>
+                    <li><a class='botao-header' href="index.html#sobre">Sobre nós</a></li>
+                    <li><a class='botao-header' href="index.html#planos">Nossos Planos</a></li>
+                    <li><a class='botao-header' href="contato.html#contato">Fale Conosco</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,64 +25,87 @@
             <img src="./fotos/r4foto__1_-removebg-preview.png" width="20%">
         </section>
     </header>
-    <main>
-        <h1 class="contato-titulo">Preencha o formulário e entraremos em contato com você!</h1>
+    <main id="contato" class="item-body">
+        <h1 class="titulo-conteudo contato-title">PREENCHA O FORMULÁRIO E ENTRAREMOS EM CONTATO COM VOCÊ!</h1>
     
         <form action="./">
-            
-                <div>
-                    <label for="nome">Nome Completo *</label>
-                    <input type="text" id="nome" name="nome" required>
+        
+            <div class="nome campo">
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="grid-form campo">
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="aaaa@aa.com">
                 </div>
-            <div class="grid-form">
-                    <div class="email">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="aaaa@aa.com">
+                <div class="fone">
+                    <div class="fone-form">
+                        <label for="telefone">Telefone*</label>
+                        <input type="tel" id="telefone" name="fone" placeholder="(99)99999-9999" required>
                     </div>
-                    <div class="fone">
-                        <div class="fone-form">
-                            <label for="telefone">Telefone*</label>
-                            <input type="tel" id="telefone" name="fone" placeholder="(99)99999-9999" required>
-                        </div>
-                        <spam>Prefira informar um telefone com acesso ao whatsapp para contato facilitado!</spam>
-                    </div>
-
+                </div>
+        
                 <div class="whatsapp">
-                    <spam>é whatsapp?</spam>
-                    <label for="sim" class="radio">sim</label>
-                    <input type="radio" id="sim" name="whatsapp">
-                    <label for="nao" class="radio">não</label>
-                    <input type="radio" id="nao" name="whatsapp">
+                    <span>É Whatsapp?</span>
+                    <div class="radio">
+                        <div>
+                            <label for="sim" class="radio">sim</label>
+                            <input type="radio" id="sim" name="whatsapp">
+                        </div>
+                        <div>
+                            <label for="nao" class="radio">não</label>
+                            <input type="radio" id="nao" name="whatsapp">
+                        </div>
+                    </div>
                 </div>
             </div>
         
-                <div>
-                    <label for="contato">Qual a melhor forma de contato?</label>
-                    <select name="contato" id="contato">
-                        <option value="whatsapp">Whatsapp</option>
-                        <option value="ligação">Ligação</option>
-                        <option value="Email">Email</option>
-                    </select>
-                </div>
-                <div class="horario-ligar">
-                    <label for="horario">Digite o melhor horário para ligarmos:</label>
-                    <textarea name="horario-ligar" id="horario" rows="5"
-                        placeholder="'Entre 8 da manhã e 1 da tarde'"></textarea>
-                </div>
+            <div class="forma-contato campo">
+                <label for="contato">Qual a melhor forma de contato?</label>
+                <select name="contato" id="contato">
+                    <option value="whatsapp">Whatsapp</option>
+                    <option value="ligação">Ligação</option>
+                    <option value="Email">Email</option>
+                </select>
+            </div>
+            <div class="mesangem-container">
+                <label for="horario">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="5" placeholder="'Melhor horário para contato, dúvidas, etc..'"></textarea>
+            </div>
         
-                <button>Enviar Formulario</button>
-            
+            <button>Enviar Formulario</button>
+        
         </form>
+        <section id="contato-home" class="item-body">
+            <div class="local">
+                <h1 class="titulo-conteudo">ONDE NOS ENCONTRAR?</h1>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1832.30277600812!2d-50.074224341741946!3d-23.29377813262266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ea83b6d5b8074f%3A0x184d46a9ed439a0b!2sAcademia%20R4!5e0!3m2!1spt-BR!2sbr!4v1680476948420!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="redes-contato">
+                <h2 class="titulo-conteudo">SIGA-NOS NAS REDES SOCIAIS:</h2>
+                <div class="redes-home">
+                    <img src="./fotos/nest_heat_link_gen_3_FILL0_wght400_GRAD0_opsz48.svg">
+                    <img src="./fotos/icons8-facebook.svg">
+                    <img src="./fotos/whatsapp-logo_icon-icons.com_57054.svg">
+                </div>
+            </div>
+    
+        </section>
     </main>
 
-    <footer>
+    <footer class="item-body">
         <div class="footer-container">
             <ul>
                 <li><a href="#sobre">Sobre nós</a></li>
-                <li><a href="#planos">Nossos Planos</a></li>
-                <li><a href="/contato.html">Fale Conosco</a></li>
+                <li><a href="index.html#planos">Nossos Planos</a></li>
+                <li><a href="/contato.html#contato">Fale Conosco</a></li>
             </ul>
-            <img src="./fotos/r4foto__1_-removebg-preview.png" width="5%">
+            <a href="index.html">
+                <img src="./fotos/r4foto__1_-removebg-preview.png">
+            </a>
             <div class="redes">
                 <img src="./fotos/nest_heat_link_gen_3_FILL0_wght400_GRAD0_opsz48.svg">
                 <img src="./fotos/icons8-facebook.svg">

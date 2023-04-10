@@ -1,78 +1,75 @@
 .sobre {
-    padding-bottom: 100px;
-    background-color: rgb(10, 10, 10);
+    padding-bottom: 6.25rem;
     width: 100%;
 }
 
-
-.titulo-sobre {
-    max-width: max-content;
-    font-family: 'segoe UI';
-    font-weight: 400;
-    margin: 0 auto;
-    padding-top: 120px;
-    padding-bottom: 140px;
-    font-size: 3rem;
-    color: rgb(190, 190, 190);
-    position: relative;
-}
-
-.titulo-sobre::before {
-    content: '';
-    width: 60%;
-    height: 4px;
-    top: 200px;
-    background-image: linear-gradient(to right, rgb(245, 39, 39), rgb(83, 15, 15));
-    position: absolute;
-}
-
 .item {
-    width: 450px;
-    position: relative;
+    min-width: 500px;
+    margin-bottom: 5rem;
 }
 
 
 .item img {
-    border-radius: 5px;
-    height: 350px;
-    width: 450px;
+    border-radius: 0.313rem;
+    height: 21.875rem;
+    width: 28.125rem;
     object-fit: cover;
 }
 
-
 .item p {
     padding-left: 0px;
-    padding-top: 30px;
-    font-size: 1.2rem;
+    padding-top: 1.875rem;
+    font-size: var(--font-size-p);
     line-height: 2rem;
-    max-width: 40ch;
+    max-width: 35ch;
     z-index: 1;
     text-align: start;
-    color: rgb(190, 190, 190);
+    color: var(--color-p);
 }
 
+.item p > span {
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: inline;
+}
 
 .flex-sobre {
-    flex-wrap: wrap;
-    display:flex;
-    flex: 1;
-    justify-content: space-evenly;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
 .sobre-flex2{
-    gap: 20px;
+    gap: 1.25rem;
     display: flex;
     flex-direction: column;
 }
 
 .sobre-flex2 h2{
-    padding-bottom: 80px;
+    padding-bottom: 5rem;
 }
 
 .sobre-flex2 a{
-    color: white;
+    color: var(--color-subtitle);
     background: rgb(29, 28, 28);
     text-transform: uppercase;
-    padding: 20px 30px;
-    border: 5px outset red;
+    padding: 1.25rem 1.875rem;
+    border: 0.313rem outset rgb(206, 28, 28);
+}
+
+.sobre-flex2 a:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+@media (max-width: 1500px) {
+    .flex-sobre {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 1200px) {
+    .flex-sobre {
+        grid-template-columns:1fr;
+    }
 }

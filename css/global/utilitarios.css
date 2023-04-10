@@ -1,0 +1,37 @@
+.titulo-conteudo {
+    max-width: max-content;
+    font-family: 'segoe UI';
+    font-weight: 400;
+    margin: 0 auto;
+    padding-top: 7.5rem;
+    padding-bottom: 8.75rem;
+    font-size: var(--font-size-title);
+    color: var(--color-title);
+    position: relative;
+}
+
+.titulo-conteudo::before {
+    content: '';
+    width: 60%;
+    height: 0.25rem;
+    top: 12.5rem;
+    background-image: linear-gradient(to right, rgb(245, 39, 39), rgb(83, 15, 15));
+    position: absolute;
+}
+
+
+.btn-plano {
+    font-weight: 100;
+    word-break:keep-all;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+    margin-top: 1.25rem;
+    padding:1rem 2rem;
+    border-radius:0.313rem;
+    background: red;
+    align-self: center;
+    cursor: pointer;
+}

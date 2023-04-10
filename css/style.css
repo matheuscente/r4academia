@@ -2,11 +2,13 @@
 @import "./global/global.css";
 @import "./global/header.css";
 @import "./global/footer.css";
+@import "./global/utilitarios.css";
 
        /*CSS HOME*/
 @import "./home/profissionais.css";
 @import "./home/sobre.css";
 @import "./home/planos.css";
+@import "./home/redes_contato.css";
 
 
     /*CSS GLIDER API*/

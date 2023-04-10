@@ -1,39 +1,63 @@
 footer {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(10, 10, 10));
-    padding-top:80px;
+    padding-top:5rem;
     width: 100%;
 }
 
 footer p {
+    color: var(--color-p);
     text-align: center;
-    padding: 50px;
-    font-size: .8rem;
+    padding: 3.125rem;
+    font-size: 1rem;
 }
 
 .footer-container {
     display: flex;
-    gap: 100px;
+    gap: 6.25rem;
     justify-content: center;
     align-items: center;
 }
 
 .footer-container a {
-    color: white;
+    white-space: nowrap;
+    color: var(--color-p);
     text-decoration: none;
 }
 
+.footer-container a:hover {
+    color: red;
+    transition: .5s;
+}
+
 .footer-container ul {
+    min-width: 29.375rem;
     list-style: none;
-    font-size: 1.2rem;
-    width: 395px;
+    font-size: var(--font-size-p);
+    width: 24.688rem;
     display: flex;
-    gap: 50px;
+    gap:3.125rem;
 }
 
 .redes {
+    min-width: 29.375rem;
     padding: 0px;
-    width: 395px;
+    width: 24.688rem;
     display: flex;
-    gap: 50px;
+    gap:3.125rem;
 
+}
+
+.redes img:hover {
+    transition: .5s;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.footer-container a {
+    max-width: 7.5rem;
+}
+.footer-container a > img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }

@@ -4,11 +4,40 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg1: rgb(5, 5, 5);
+    --bg2: rgb(25, 25, 25);
+    --bg3: #282a2d;
+    --color-title: rgb(240, 240, 240);
+    --color-subtitle: rgb(220, 220, 220);
+    --color-p: rgb(200, 200, 200);
+    --font-size-p: 1.2rem;
+    --font-size-p2: 1rem;
+    --font-size-p3: .8rem;
+    --font-size-title: 3rem;
+    --font-size-title2: 2.5rem;
+    --font-size-title3: 2rem;
+    --font-size-subtitle: 2rem; 
+    --font-size-subtitle2: 1.7rem;
+    --font-size-subtitle3: 1.4rem;
+    --title-font: 'segoe UI';
+    --p-font: Arial;
+    --title-detail: linear-gradient(to right, rgb(245, 39, 39), rgb(83, 15, 15));
+
+}
+
+.item-body:nth-child(even) {
+    background-color: var(--bg1);
+}
+
+.item-body:nth-child(odd) {
+    background-color: var(--bg2);
+}
+
 
 body {
     display: grid;
     justify-items: center;
-    background: #282a2d;
 }
 img {
     max-width: 80%;

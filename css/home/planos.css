@@ -1,25 +1,39 @@
+#planos {
+    background: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(/fotos/bf-foto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding-bottom: 3.125rem;
+}
 .plano-header .preco {
     position: absolute;
-    top: -20px;
-    right: -20px;
+    top: -1.25rem;
+    right: -1.25rem;
     background: black;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 1.25rem;
+    border-radius: 0.313rem;
     z-index: 1;
-    font-size: 1.2rem;
+    font-size: var(--font-size-subtitle);
 }
 
 .plano-header {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     z-index: 0;
 }
+
+.plano h3 {
+    font-size: var(--font-size-subtitle);
+    color: var(--color-subtitle);
+}
 .plano {
-    width: 300px;
-    background: #0e1013;
-    color: rgb(190, 190, 190);
-    padding: 20px 20px 20px 10px;
-    border-radius: 5px;;
+    width: 37.5rem;
+    background: #080808;
+    font-size: var(--font-size-p);
+    color: var(--color-p);
+    padding: 2rem;
+    border-radius: 0.313rem;
+    box-shadow: 4px 4px 5px rgb(22, 22, 22), -4px -4px 5px rgb(22, 22, 22);
 
 }
 
@@ -29,13 +43,14 @@
 
 .plano ul li {
 
-    border-radius: 5px;
-    padding: 8px;
+    border-radius: 0.313rem;
+    padding: 0.625rem;
 }
 
 .plano ul li::before {
-    content:">>";
-    padding-right: 5px;
+    content:"»";
+    font-size: var(--font-size-p);
+    padding-right: 0.313rem;
     color: red;
 }
 
@@ -48,42 +63,46 @@
     flex-direction: column;
 }
 
-.btn-plano {
-    margin-top: 20px;
-    padding:10px 20px;
-    border-radius: 5px;
-    background: red;
-    align-self: center;
-    cursor: pointer;
+.glider-contain {
+    position: relative;
+    margin-top: 3.125rem;
+    max-width: 87.5rem;
+    padding-left: 1.875rem;
 }
+.container-glider {
+    margin: 0 auto;
+    width: 93.75rem;
 
-.glider-contain {
-    position: relative;
-    margin-top: 50px;
-    max-width: 1000px;
-}
-.glider-contain {
-    padding-left: 30px;
-    position: relative;
 }
 .conteiner {
+    border-radius: 0.313rem;
+    margin-bottom: 1.875rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.125rem;
     position: relative;
-    padding: 50px 20px 10px 20px;
-    margin-top: 50px;
-    border: 4px solid red;
-    border-radius: 5px;
-    margin-bottom: 50px;
+    padding: 3.125rem;
+    margin-top: 3.125rem;
 }
 
 .titulo {
     z-index: 3;
-    font-size: 2rem;
-    background: #282a2d;
-    padding: 10px 100px 0px 100px;
-    top: -30px;
+    font-size: var(--font-size-subtitle);
+    padding: 0.625rem 6.25rem 0px 6.25rem;
+    top: -1.875rem;
     left: 35%;
-    color: rgb(190, 190, 190);
+    color: var(--color-title);
     position: absolute;
     border: none;
     cursor: pointer;
+
+}
+
+.conteiner:last-child .titulo {
+    left: 30%;
+}
+
+
+.container-glider h1::before {
+    top: 140.313rem;
 }
