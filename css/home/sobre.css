@@ -1,15 +1,15 @@
 
 #sobre {
-    padding: 20px;
-    min-width: fit-content;
     display: grid;
-    justify-items: center;
+    justify-content: center;
+    min-width: 100vw;
 }
 
 .titulo-conteudo {
     padding: 20px;
     margin-bottom: 40px;
-    font-size: calc(var(--font-size-title3) - 5px);
+    margin-top: 40px;
+    font-size: calc(var(--font-size-title3) - 10px);
     width: 25ch;
     text-align: center;
 }
@@ -22,16 +22,7 @@
     transform: rotate(-40deg);
     background-image: linear-gradient(to left, rgb(245, 39, 39), rgb(83, 15, 15));
 }
-#sobre .titulo-conteudo::after {
-    content: '';
-    width: 15%;
-    height: 0.25rem;
-    top: 5.8rem;
-    left: 19rem;
-    background-image: linear-gradient(to right, rgb(245, 39, 39), rgb(83, 15, 15));
-    position: absolute;
-    transform: rotate(-40deg);
-}
+
 #sobre .titulo-conteudo2::before {
     left: 2%;
     width: 15%;
@@ -40,11 +31,6 @@
     transform: rotate(-40deg);
     background-image: linear-gradient(to left, rgb(245, 39, 39), rgb(83, 15, 15));
 }
-
-#sobre .titulo-conteudo2::after {
-    display: none;
-}
-
 .foto-sobre img {
     display: block;
     margin: 0 auto;
@@ -54,8 +40,8 @@
 }
 
 .flex-sobre {
-    width: 100vw;
-    gap: 120px;
+    width: 82vw;
+    gap: 100px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -66,11 +52,11 @@
     line-height: 2rem;
     width: inherit;
     color: var(--color-p);
-    font-size: var(--font-size-p);
+    font-size: var(--font-size-p2);
 }
 
 .item {
-    width: 90vw;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -79,16 +65,17 @@
     flex-direction: column;
 }
 .sobre-flex2 .btn-plano {
-    font-size: var(--font-size-p2);
+    font-weight: bold;
+    font-size: var(--font-size-p3);
     margin-bottom: 20px;
 }
 
 .titulo-conteudo2 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-top: 50px;
     padding: 20px;
-    font-size: calc(var(--font-size-title3) - 5px);
-    width: 25ch;
+    font-size: calc(var(--font-size-title3) - 10px);
+    width: 28ch;
     text-align: center;
 }
 
