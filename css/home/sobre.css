@@ -2,7 +2,6 @@
 #sobre {
     padding: 50px;
     min-width: 100vw;
-;
 }
 
 .titulo-conteudo {
@@ -60,7 +59,7 @@
 }
 
 .flex-sobre {
-    width: 100vw;
+    width: 82vw;
     gap: 120px;
     padding: 10px;
     display: flex;
@@ -76,7 +75,7 @@
 }
 
 .item {
-    width: 80vw;
+    width: 90vw;
     margin: 0 auto;
 }
 
