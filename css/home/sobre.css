@@ -1,7 +1,9 @@
 
 #sobre {
-    padding: 50px;
-    min-width: 100vw;
+    padding: 20px;
+    min-width: fit-content;
+    display: grid;
+    justify-items: center;
 }
 
 .titulo-conteudo {
@@ -40,14 +42,7 @@
 }
 
 #sobre .titulo-conteudo2::after {
-    content: '';
-    width: 15%;
-    height: 0.25rem;
-    top: 5.8rem;
-    left: 22rem;
-    background-image: linear-gradient(to right, rgb(245, 39, 39), rgb(83, 15, 15));
-    position: absolute;
-    transform: rotate(-40deg);
+    display: none;
 }
 
 .foto-sobre img {
@@ -59,7 +54,7 @@
 }
 
 .flex-sobre {
-    width: 82vw;
+    width: 100vw;
     gap: 120px;
     padding: 10px;
     display: flex;
@@ -89,10 +84,11 @@
 }
 
 .titulo-conteudo2 {
+    margin-bottom: 10px;
     margin-top: 50px;
     padding: 20px;
     font-size: calc(var(--font-size-title3) - 5px);
-    width: 28ch;
+    width: 25ch;
     text-align: center;
 }
 
