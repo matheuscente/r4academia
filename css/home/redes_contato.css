@@ -1,3 +1,5 @@
+@media (min-width: 600px) {
+
 #contato-home {
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/fotos/pexels-anush-gorak-1229356.jpg);
     background-repeat: no-repeat;
@@ -53,4 +55,5 @@
 .redes-contato h2::before
  {
     top: 8.875rem;
+}
 }

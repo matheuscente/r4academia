@@ -1,3 +1,6 @@
+
+@media (min-width: 600px) {
+
 footer {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(10, 10, 10));
     padding-top:5rem;
@@ -60,4 +63,5 @@ footer p {
     width: 100%;
     display: block;
     margin: 0 auto;
+}
 }

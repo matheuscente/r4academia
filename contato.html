@@ -8,23 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="item-body">
-        <div class="header">
-            <div class="logo">
-                <a href="index.html"><img src="/fotos/logo.svg"></a>
-            </div>
-            <nav class="nav-header">
-                <ul class="lista-header">
-                    <li><a class='botao-header' href="index.html#sobre">Sobre nós</a></li>
-                    <li><a class='botao-header' href="index.html#planos">Nossos Planos</a></li>
-                    <li><a class='botao-header' href="contato.html#contato">Fale Conosco</a></li>
-                </ul>
-            </nav>
-        </div>
-        <section id="home" class="home">
-            <img src="./fotos/r4foto__1_-removebg-preview.png" width="20%">
-        </section>
-    </header>
+
     <main id="contato" class="item-body">
         <h1 class="titulo-conteudo contato-title">PREENCHA O FORMULÁRIO E ENTRAREMOS EM CONTATO COM VOCÊ!</h1>
     
@@ -34,20 +18,20 @@
                 <label for="nome">Nome Completo *</label>
                 <input type="text" id="nome" name="nome" required>
             </div>
-            <div class="grid-form campo">
-                <div class="email">
+            <div class="grid-form">
+                <div class="email campo">
                     <label for="email">Email</label>
                     <input type="email" id="email" name="email" placeholder="aaaa@aa.com">
                 </div>
                 <div class="fone">
-                    <div class="fone-form">
+                    <div class="fone-form campo">
                         <label for="telefone">Telefone*</label>
                         <input type="tel" id="telefone" name="fone" placeholder="(99)99999-9999" required>
                     </div>
                 </div>
         
-                <div class="whatsapp">
-                    <span>É Whatsapp?</span>
+                <div class="whatsapp campo">
+                    <span class="span-wpp">É Whatsapp?</span>
                     <div class="radio">
                         <div>
                             <label for="sim" class="radio">sim</label>
@@ -69,7 +53,7 @@
                     <option value="Email">Email</option>
                 </select>
             </div>
-            <div class="mesangem-container">
+            <div class="mensagem-container campo">
                 <label for="horario">Mensagem:</label>
                 <textarea name="mensagem" id="mensagem" rows="5" placeholder="'Melhor horário para contato, dúvidas, etc..'"></textarea>
             </div>
